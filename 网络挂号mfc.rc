@@ -1,0 +1,391 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\网络挂号mfc.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\网络挂号mfc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 网络挂号mfc"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "网络挂号mfc 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2012",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_MFC_DIALOG DIALOGEX 0, 0, 542, 355
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "xxx医院网络挂号--登录"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "登录",IDC_BUTTON1,459,181,58,36
+    CTEXT           "账号",IDC_STATIC,345,23,45,24,SS_CENTERIMAGE
+    CTEXT           "密码",IDC_STATIC,345,61,45,24,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT1,397,28,122,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,397,64,122,18,ES_AUTOHSCROLL
+    PUSHBUTTON      "注册新用户",IDC_BUTTON2,369,181,58,36
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 421, 252
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "xxx医院网络挂号"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "挂号",IDC_BUTTON1,284,44,50,28
+    PUSHBUTTON      "查询",IDC_BUTTON3,364,44,50,28
+    PUSHBUTTON      "重新登录",IDC_BUTTON2,319,125,66,26
+END
+
+IDD_DIALOG2 DIALOG DISCARDABLE  0, 0, 419, 252
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "xxx医院网络挂号--挂号"
+FONT 10, "System"
+BEGIN
+    LTEXT           "科室",IDC_STATIC,23,21,35,12
+    LTEXT           "时间",IDC_STATIC,82,61,20,12
+    LTEXT           "医生",IDC_STATIC,7,61,19,12
+    EDITTEXT        IDC_EDIT2,32,56,46,24,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT3,113,56,55,21,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "类别",IDC_STATIC,105,22,41,15
+    CONTROL         "内科",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,55,14,32,
+                    10
+    CONTROL         "外科",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,56,32,32,
+                    10
+    CONTROL         "呼吸内科",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,150,13,
+                    48,10
+    CONTROL         "消化内科",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,200,14,
+                    48,10
+    CONTROL         "内分泌系统",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,258,
+                    15,56,10
+    CONTROL         "泌尿外科",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON,149,34,
+                    48,10
+    CONTROL         "神经外科",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON,200,34,
+                    48,10
+    CONTROL         "普通外科",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON,257,34,
+                    48,10
+    LTEXT           "医生",IDC_STATIC,7,96,16,14
+    LTEXT           "时间",IDC_STATIC,84,92,17,12
+    EDITTEXT        IDC_EDIT4,31,91,45,20,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT5,112,88,56,22,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "选择",IDC_BUTTON4,257,59,47,17
+    PUSHBUTTON      "选择",IDC_BUTTON5,256,95,48,17
+    LTEXT           "科室",IDC_STATIC,171,61,22,10
+    LTEXT           "科室",IDC_STATIC,170,93,22,10
+    EDITTEXT        IDC_EDIT1,199,55,43,21,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT6,198,91,44,19,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,210,117,100,15
+END
+
+IDD_DIALOG3 DIALOG DISCARDABLE  0, 0, 419, 271
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "xxx医院网络挂号--查询"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "用户查询",IDC_BUTTON1,336,112,52,30
+    PUSHBUTTON      "医生查询",IDC_BUTTON2,335,46,52,30
+END
+
+IDD_DIALOG4 DIALOG DISCARDABLE  0, 0, 404, 268
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "xxx医院网络挂号--注册新用户"
+FONT 10, "System"
+BEGIN
+    LTEXT           "请输入账号",IDC_STATIC,7,21,57,8
+    EDITTEXT        IDC_EDIT77,71,18,92,14,ES_AUTOHSCROLL
+    LTEXT           "请输入密码",IDC_STATIC,7,42,57,8
+    LTEXT           "请输入姓名",IDC_STATIC,7,67,57,8
+    LTEXT           "请输入身份证号",IDC_STATIC,7,90,57,8
+    EDITTEXT        IDC_EDIT78,71,39,92,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT79,71,63,73,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT80,70,89,103,14,ES_AUTOHSCROLL
+    LTEXT           "确认您填写的信息真实有效，否则会对您的挂号有影响。",
+                    IDC_STATIC,7,125,60,37
+    PUSHBUTTON      "注册",IDC_BUTTON1,88,127,53,24
+END
+
+IDD_DIALOG5 DIALOG DISCARDABLE  0, 0, 417, 251
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "医生资料"
+FONT 10, "System"
+BEGIN
+    LTEXT           "张三 工作时间：上午8点—11点  工作室201 简历；xxxxxxxxx",
+                    IDC_STATIC,22,20,207,8
+    LTEXT           "李四 工作时间：下午2点—5点   工作室202 简历；xxxxxxxxx",
+                    IDC_STATIC,22,35,207,8
+    LTEXT           "王五 工作时间：上午8点—11点  工作室203 简历；xxxxxxxxx",
+                    IDC_STATIC,22,50,207,8
+    LTEXT           "李三 工作时间：下午2点—5点   工作室204 简历；xxxxxxxxx",
+                    IDC_STATIC,22,65,207,8
+    LTEXT           "吴学 工作时间：上午8点—11点  工作室205 简历；xxxxxxxxx",
+                    IDC_STATIC,22,80,207,8
+    LTEXT           "杨建 工作时间：下午2点—5点   工作室206 简历；xxxxxxxxx",
+                    IDC_STATIC,22,95,207,8
+    LTEXT           "王胜 工作时间：上午8点—11点  工作室207 简历；xxxxxxxxx",
+                    IDC_STATIC,22,110,207,8
+    LTEXT           "谭国 工作时间：下午2点—5点   工作室208 简历；xxxxxxxxx",
+                    IDC_STATIC,22,125,207,8
+    LTEXT           "余阳 工作时间：上午8点—11点  工作室209 简历；xxxxxxxxx",
+                    IDC_STATIC,22,140,207,8
+    LTEXT           "胡志 工作时间：下午2点—5点   工作室210 简历；xxxxxxxxx",
+                    IDC_STATIC,22,155,207,8
+    LTEXT           "岱山 工作时间：上午8点—11点  工作室211 简历；xxxxxxxxx",
+                    IDC_STATIC,22,170,207,8
+    LTEXT           "常超 工作时间：下午2点—5点   工作室210 简历；xxxxxxxxx",
+                    IDC_STATIC,22,185,207,8
+END
+
+IDD_DIALOG6 DIALOGEX 0, 0, 419, 267
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "用户查询"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,15,17,316,151,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN | NOT 
+                    WS_BORDER | WS_VSCROLL | WS_HSCROLL,WS_EX_TRANSPARENT
+    PUSHBUTTON      "查询",IDC_BUTTON1,232,192,65,24
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "网络挂号mfc Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "网络挂号mfc\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2012\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "网络挂号mfc.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "网络挂号mfc 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_MFC_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 535
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 348
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 414
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 245
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 412
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 245
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 412
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 264
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 397
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 261
+    END
+
+    IDD_DIALOG5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 410
+        TOPMARGIN, 7
+    END
+
+    IDD_DIALOG6, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 412
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 260
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\1.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\2.bmp"
+IDB_BITMAP3             BITMAP  DISCARDABLE     "res\\3.bmp"
+IDB_BITMAP4             BITMAP  DISCARDABLE     "res\\5.bmp"
+IDB_BITMAP5             BITMAP  DISCARDABLE     "res\\4.bmp"
+IDB_BITMAP6             BITMAP  DISCARDABLE     "res\\6.bmp"
+IDB_BITMAP7             BITMAP  DISCARDABLE     "res\\bitmap7.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 网络挂号mfc(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\网络挂号mfc.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
